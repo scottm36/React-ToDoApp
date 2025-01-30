@@ -48,3 +48,13 @@ export default tseslint.config({
   },
 })
 ```
+
+## Run Cypress
+
+```bash
+npm run cy:open
+```
+
+```bash
+npm run cy:run
+```
