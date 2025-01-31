@@ -51,6 +51,27 @@ export default tseslint.config({
 
 ## Run Cypress
 
+Todo:
+  - [ ] Add cypress
+  - [ ] Add cypress config
+  - [ ] Add cypress commands
+  - [ ] Add cypress tests
+  - [ ] Add cypress fixtures
+  - [ ] Add cypress intercepts
+  - [ ] Add cypress assertions
+  - [ ] Add cypress hooks
+  - [ ] Add cypress plugins
+  - [ ] Add cypress support
+  - [ ] Add cypress commands
+  - [ ] Add cypress tests for components
+  - [ ] Add cypress tests for pages
+  - [ ] Add cypress tests for api
+  - [ ] Add cypress tests for utils
+  - [ ] Add cypress tests for hooks
+  - [ ] Add cypress tests for context
+  - [ ] Add cypress tests for reducers
+  - [ ] Add cypress tests for selectors
+
 ```bash
 npm run cy:open
 ```
