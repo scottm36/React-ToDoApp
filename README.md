@@ -60,13 +60,30 @@ npm run cy:run   # Runs Cypress tests headlessly
 ```
 
 Todo:
-  - [ ] Add cypress
-  - [ ] Add cypress config
-  - [ ] Add cypress commands
-  - [ ] Add cypress tests
+  - [ ] Add cypress (`npm install cypress @testing-library/cypress --save-dev`)
+  - [ ] Add cypress config with TypeScript support
+    - Create `cypress.config.ts`
+    - Update `tsconfig.json` for Cypress types
+  - [ ] Add cypress commands with TypeScript
+    - Set up `cypress/support/commands.ts`
+    - Configure `cypress/support/e2e.ts`
+  - [ ] Add cypress tests with `.cy.ts` extension
   - [ ] Add cypress fixtures
 
-  
+Example TypeScript configuration for Cypress:
+
+```typescript
+// cypress.config.ts
+import { defineConfig } from 'cypress'
+
+export default defineConfig({
+  e2e: {
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+})
+```
 
 ```bash
 npm run cy:open
