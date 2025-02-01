@@ -1,4 +1,4 @@
-# React-ToDoApp [![Cypress Tests](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml)
+# React-ToDoApp [![CodeQL Advanced](https://github.com/scottm36/React-ToDoApp/actions/workflows/codeql.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/codeql.yml) [![Cypress Tests](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml)
 
 # React + TypeScript + Vite
 
