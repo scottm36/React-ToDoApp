@@ -1,6 +1,6 @@
 import cypress from "cypress";
 
-describe('Counter and reset test', () => {
+describe('Add new item and verify list', () => {
     it('should increment the counter', () => {
         cy.visit('http://localhost:5173');
         cy.get('[data-cy="list-item"]').should('have.length', 4);
