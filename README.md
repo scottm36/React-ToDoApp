@@ -1,4 +1,4 @@
-# React-ToDoApp [![Action status][ci-badge]][ci-workflow] [![cypress][cloud-badge]][cloud-project]
+# React-ToDoApp [![Cypress Tests](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml)
 
 # React + TypeScript + Vite
 
