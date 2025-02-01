@@ -1,10 +1,89 @@
 import { useState } from 'react'
 import './App.css'
 
+function List({ items, onAddItem, onToggleComplete, onDeleteItem }: { 
+  items: Array<{ text: string, completed: boolean }>, 
+  onAddItem: (item: string) => void,
+  onToggleComplete: (index: number) => void,
+  onDeleteItem: (index: number) => void 
+}) {
+  const [newItem, setNewItem] = useState('');
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (newItem.trim()) {
+      onAddItem(newItem.trim());
+      setNewItem('');
+    }
+  };
+
+  return (
+    <div className="list-container">
+      <form onSubmit={handleSubmit} className="add-item-form">
+        <input
+          type="text"
+          value={newItem}
+          onChange={(e) => setNewItem(e.target.value)}
+          placeholder="Enter new item"
+          className="item-input"
+        />
+        <button type="submit" className="add-button">Add Item</button>
+      </form>
+      <ul className="items-list">
+        {items.map((item, index) => (
+          <li key={index} className="list-item">
+            <input
+              type="checkbox"
+              checked={item.completed}
+              onChange={() => onToggleComplete(index)}
+              className="list-item-checkbox"
+            />
+            <div className={`list-item-text ${item.completed ? 'completed' : ''}`}>
+              {item.text}
+            </div>
+            <button
+              onClick={() => onDeleteItem(index)}
+              className="delete-button"
+            >
+              Delete
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function App() {
+  const [items, setItems] = useState([
+    { text: "Learn React", completed: false },
+    { text: "Build a project", completed: false },
+    { text: "Write documentation", completed: false },
+    { text: "Share with others", completed: false }
+  ]);
+
+  const addItem = (newItem: string) => {
+    setItems([...items, { text: newItem, completed: false }]);
+  };
+
+  const toggleComplete = (index: number) => {
+    setItems(items.map((item, i) => 
+      i === index ? { ...item, completed: !item.completed } : item
+    ));
+  };
+
+  const deleteItem = (index: number) => {
+    setItems(items.filter((_, i) => i !== index));
+  };
 
   return (
     <>
+      <List 
+        items={items} 
+        onAddItem={addItem}
+        onToggleComplete={toggleComplete}
+        onDeleteItem={deleteItem}
+      />
     </>
   )
 }
