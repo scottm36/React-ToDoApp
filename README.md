@@ -1,5 +1,4 @@
-# React-ToDoApp [![CodeQL Advanced](https://github.com/scottm36/React-ToDoApp/actions/workflows/codeql.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/codeql.yml) 
-[![React demo](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/detailed/fqoeb2&style=flat-square&logo=cypress)](https://cloud.cypress.io/projects/fqoeb2/runs) [![Cypress Tests](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml)
+# React-ToDoApp [![React demo](https://img.shields.io/endpoint?url=https://cloud.cypress.io/badge/count/fqoeb2&style=flat-square&logo=cypress)](https://cloud.cypress.io/projects/fqoeb2/runs) [![Cypress Tests](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/cypress.yml) [![CodeQL Advanced](https://github.com/scottm36/React-ToDoApp/actions/workflows/codeql.yml/badge.svg)](https://github.com/scottm36/React-ToDoApp/actions/workflows/codeql.yml) 
 
 # React + TypeScript + Vite
 
