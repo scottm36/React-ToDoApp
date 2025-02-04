@@ -1,7 +1,7 @@
 {
   "name": "react-todoapp",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -9,7 +9,7 @@
     "type-check": "tsc --noEmit",
     "preview": "vite preview",
     "cy:open": "cypress open",
-    "cy:run": "cypress run --spec 'cypress/e2e/react-test/counter.cy.ts'"
+    "cy:run": "cypress run --spec 'cypress/e2e/react-test/todo.cy.ts'"
   },
   "dependencies": {
     "react": "^18.3.1",
