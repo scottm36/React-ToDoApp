@@ -62,14 +62,14 @@ npm run cy:run   # Runs Cypress tests headlessly
 ```
 
 Todo:
-  - [ ] Add cypress (`npm install cypress @testing-library/cypress --save-dev`)
-  - [ ] Add cypress config with TypeScript support
+  - [X] Add cypress (`npm install cypress @testing-library/cypress --save-dev`)
+  - [X] Add cypress config with TypeScript support
     - Create `cypress.config.ts`
     - Update `tsconfig.json` for Cypress types
-  - [ ] Add cypress commands with TypeScript
+  - [X] Add cypress commands with TypeScript
     - Set up `cypress/support/commands.ts`
     - Configure `cypress/support/e2e.ts`
-  - [ ] Add cypress tests with `.cy.ts` extension
+  - [X] Add cypress tests with `.cy.ts` extension
   - [ ] Add cypress fixtures
 
 Example TypeScript configuration for Cypress:
