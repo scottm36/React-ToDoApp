@@ -55,6 +55,15 @@ function List({ items, onAddItem, onToggleComplete, onDeleteItem }: {
   );
 }
 
+function StatusBar({ items }: { items: Array<{ text: string, completed: boolean }> }) {
+  return (
+    <div className="status-bar" data-cy="status-bar">
+      <span>Status: Ready</span>
+      <span>Items: {items.length}</span>
+    </div>
+  );
+}
+
 function App() {
   const [items, setItems] = useState([
     { text: "Learn React", completed: false },
@@ -79,6 +88,7 @@ function App() {
 
   return (
     <>
+      <StatusBar items={items} />
       <List
         items={items}
         onAddItem={addItem}
