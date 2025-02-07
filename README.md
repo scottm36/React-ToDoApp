@@ -73,6 +73,7 @@ Todo:
   - [ ] Add cypress fixtures
   - [ ] Add Component Testing.
   - [ ] ....
+  - [ ] ....
 
 Example TypeScript configuration for Cypress:
 
