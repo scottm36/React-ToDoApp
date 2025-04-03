@@ -71,6 +71,7 @@ Todo:
     - Configure `cypress/support/e2e.ts`
   - [X] Add cypress tests with `.cy.ts` extension
   - [ ] Add cypress fixtures
+  - [ ] Add Component Testing
 
 Example TypeScript configuration for Cypress:
 
